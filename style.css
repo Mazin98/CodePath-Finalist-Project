@@ -390,6 +390,12 @@ background: aqua;
   cursor: pointer;
  }
 
+ #msg{
+  color: yellow;
+  margin-top: -40px;
+  display:block;
+ }
+
 
  /* ------------css for small screen--------- */
 

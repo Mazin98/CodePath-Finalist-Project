@@ -162,21 +162,20 @@
             <a href="images/Mazin_Tagelsir_Resume.pdf" class="btn btn2">Resume</a>
           </div>
             <div class="contact-right">
-              <form name="submit-to-google-sheet"></form>
-              <form>
+              <!-- <form name="submit-to-google-sheet"> -->
+                <form name="submit-to-google-sheet">
                 <input type="text" name = "Name" placeholder="Your Name" required>
                 <input type="email" name="Email" placeholder="Your Email" required>
                 <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                 <button type="submit" class="btn btn2">Submit</button>
-
+                </form>
               </form>
-
+              <span id="msg"></span>
             </div>
-
           </div>
         </div>
-
       </div>
+
 
 
 
@@ -205,13 +204,20 @@
 
 <!-- script for the google sheets message -->
 <script>
-  const scriptURL = '<https://script.google.com/macros/s/AKfycbxTq4B_Lminol2gc0AKvArw3JD_He7ETuW7HHY4DpntY89osjR8MMATWQxjRRCQrBIdAw/exec>'
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxTq4B_Lminol2gc0AKvArw3JD_He7ETuW7HHY4DpntY89osjR8MMATWQxjRRCQrBIdAw/exec'
   const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
 
   form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
+      .then(response => {
+        msg.innerHTML = "Message sent!"  // displays message after submit message is sent
+        setTimeout(function(){ //sets timeout to empty
+          msg.innerHTML = "" //resets message area to final
+        },5000) //removes after 5 seconds 
+        form.reset()
+      })
       .catch(error => console.error('Error!', error.message))
   })
 </script>
