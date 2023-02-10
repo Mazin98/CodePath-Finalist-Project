@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a068cb07ed.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                  <img src="" class = "logo">
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="https://linkedin.com/in/mazin-tagelsir-068074238">LinkedIn</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=rIp9UaqPykc">Interview Video</a></li>
+                    <li><a href="https://dot.cards/mazint">Contact</a></li>
+                    <i class="fa-solid fa-xmark"></i>
+                </ul>
+                <i class="fa-solid fa-bars"></i>
+            </nav>
+            <!-- <div class="wrapper">
+              <div class="static-txt"></div>
+              <ul class="dynamic-txts">
+                <li><span>Aspiring Software Engineer</span></li>
+                <li><span>Student</span></li>
+                <li><span>Problem solver</span></li>
+                <li><span>Programmer</span></li>
+              </ul>
+           </div> -->
+            <div class="header-text">
+              <p><span>Aspiring Software Engineer </span> |<br><span>Student</span> | <span>Developer</span></p>
+            </div>
+
+            <div class="header-c">
+              <h1><span> Mazin Tagelsir</h1>
+            </div>
+            <div class="social-icons">
+              <a href="https://dot.cards/mazint"><i class="fa-solid fa-address-book"></i></a>
+              <a href="https://linkedin.com/in/mazin-tagelsir-068074238"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/Mazin98/Projects"><i class="fa-brands fa-github"></i></a>
+              <a href="https://twitter.com/MazinTagelsir"><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+
+        </div>    
+     </div>
+<!-- --------------------about------------------- -->
+     <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="images/C221010182-OSU-ODI-080.jpg">
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">About me </h1>
+              <p>As a student in Computer Science student with a passion for problem-solving, I am eager to leverage my skills and knowledge to make a positive impact in the field. I have experience working with a range of programming languages, including Java and Python, and I enjoy using my skills to tackle complex problems and create innovative solutions.
+
+                In my current role as an Engineering Lab Assistant, I have gained valuable experience working in a hands-on environment. I am known for my strong problem-solving abilities and my dedication to learning and self-improvement. I am a team player with excellent communication skills, and I am committed to continuing my professional development as I pursue a career in computer science.
+                
+                In my free time, I enjoy working on personal projects to expand my understanding of problem-solving and develop new skills. I am always looking for new opportunities to learn and grow, and I am excited to explore new challenges and opportunities in the field of computer science. I'm very interested in Software Engineering, UX/UI Design, CyberSecurity, Artificial Intelligence, and love applying myself through Web Development. 
+                
+                I am actively seeking internship opportunities as a Software Engineer, and I am excited to bring my passion for problem-solving and technical skills to a professional setting. Let's connect on LinkedIn and discuss how I can contribute to your team.</p>
+
+                <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('skills')">Skills & Tools</p>
+                  <p class="tab-links"onclick="opentab('experience')">Work and Leadership</p>
+                  <p class="tab-links"onclick="opentab('extracurriculars')">Extra Curriculars</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                    <li><i class="fa-solid fa-code"></i><span> Programming Languages/Frameworks</span><br>Java, Python, HTML/CSS/SASS/XML, MATLAB, Javascript, Selenium, Flask</li>
+                    <li><i class="fa-solid fa-user"></i><span> IDEs</span><br>VSCode, Eclipse, Github</li>
+                    <li><i class="fa-solid fa-laptop"></i><span> Operating Systems</span><br>Windows, Mac</li>
+                  </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                  <ul>
+                    <li><i class="fa-solid fa-toolbox"></i><span> May 2022 - Present</span><br>Engineering Lab Assistant @ THE Ohio State University</li>
+                    <li><i class="fa-regular fa-address-card"></i><span> August 2022 - Present</span><br>Peer Leader @ PASS & NSSA</li>
+                    <li><i class="fa-solid fa-laptop"></i><span> August 2018 - April 2021</span><br>Budgeting Leader and IT Support @ MYImpact</li>
+                  </ul>
+                </div>
+
+                <div class="tab-contents" id="extracurriculars">
+                  <ul>
+                    <li><i class="fa-solid fa-futbol"></i><span> Athletic Sports</span><br>Rec Basketball, Ohio Sudanese Team</li>
+                    <li><i class="fa-solid fa-basketball"></i><span> Basketball trainer</span><br>Train younger sudanese kids every Sunday</li>
+                    <li><i class="fa-solid fa-dumbbell"></i><span> Weight Training</span><br>Gains!</li>
+                  </ul>
+                </div>
+
+
+            </div>
+          </div>
+        </div>
+     </div>
+
+
+     <!-- ---------------Video Interview--------------- -->
+     <div id="video">
+      <div class="container">
+        <h1 class="sub-title">Interview Video <i class="fa-brands fa-youtube"></i></h1>
+        <div class="vid">
+          <iframe width="1000" height="500" src="https://www.youtube.com/embed/rIp9UaqPykc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        </div>
+      </div>
+     </div>
+
+
+     <!-- -------------portfolio------------- -->
+     <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/portfolio picture.jpg">
+            <div class="layer">
+              <h3>Personal Website - in progress</h3>
+              <p>Personal Portfolio with gallery</p>
+              <a href="http://tagelsir.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/university room matrix.jpg">
+            <div class="layer">
+            <h3>University Room Matrix</h3>
+            <p>Application to find where open rooms are on campus</p>
+            <a href="https://github.com/kavlekar101/2022-Hack-Project-Actual"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/amazon pic.jpg">
+            <div class="layer">
+            <h3>Amazon Data Analysis</h3>
+            <p>Used java to compute the average for each rating using standard deviation, regarless of genre </p>
+            <a href="https://github.com/Mazin98/Projects/tree/main/Amazon%20Data%20Analysis"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/Mazin98/Projects" class="btn">See More</a>
+      </div>
+     </div>
+
+
+     <!-- -------------------contact-------------------- -->
+     <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact me </h1>
+            <p> <i class="fa-solid fa-envelope"></i> mazintagelsir@hotmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 6147951045</p>
+            <div class="social-icons">
+              <a href="https://dot.cards/mazint"><i class="fa-solid fa-address-book"></i></a>
+              <a href="https://linkedin.com/in/mazin-tagelsir-068074238"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/Mazin98/Projects"><i class="fa-brands fa-github"></i></a>
+              <a href="https://twitter.com/MazinTagelsir"><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+            <a href="images/Mazin_Tagelsir_Resume.pdf" class="btn btn2">Resume</a>
+          </div>
+            <div class="contact-right">
+              <form>
+                <input type="text" name = "Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+
+              </form>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+
+<!-- -----------------javascript---------------- -->
+     <script>
+
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+      }
+
+
+
+     </script>
+
+
+
+</body>
+</html>
