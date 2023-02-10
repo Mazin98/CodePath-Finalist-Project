@@ -14,14 +14,11 @@
             <nav>
                   <img src="" class = "logo">
                   <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="https://linkedin.com/in/mazin-tagelsir-068074238">LinkedIn</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=rIp9UaqPykc">Interview Video</a></li>
-                    <li><a href="https://dot.cards/mazint">Contact</a></li>
-                    <i class="fa-solid fa-xmark"></i>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#video">Interview Video</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-                <i class="fa-solid fa-bars"></i>
             </nav>
             <!-- <div class="wrapper">
               <div class="static-txt"></div>
@@ -53,7 +50,7 @@
         <div class="container">
           <div class="row">
             <div class="about-col-1">
-              <img src="images/C221010182-OSU-ODI-080.jpg">
+              <img src="images/C221010182-OSU-ODI-080.jpg" alt="Mazin Tagelsir during the Autumn 2022 semester">
             </div>
             <div class="about-col-2">
               <h1 class="sub-title">About me </h1>
@@ -119,7 +116,7 @@
         <h1 class="sub-title">Projects</h1>
         <div class="work-list">
           <div class="work">
-            <img src="images/portfolio picture.jpg">
+            <img src="images/portfolio picture.jpg" alt="Wbsite portfolio on personal domain">
             <div class="layer">
               <h3>Personal Website - in progress</h3>
               <p>Personal Portfolio with gallery</p>
@@ -127,15 +124,15 @@
             </div>
           </div>
           <div class="work">
-            <img src="images/university room matrix.jpg">
+            <img src="images/university room matrix.jpg" alt="Room matrix Application with Python Flask, HTML, CSS, Selenium (group project)">
             <div class="layer">
             <h3>University Room Matrix</h3>
             <p>Application to find where open rooms are on campus</p>
-            <a href="https://github.com/kavlekar101/2022-Hack-Project-Actual"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="https://github.com/kavlekar101/2022-Hack-Project-Actual"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
           </div>
           <div class="work">
-            <img src="images/amazon pic.jpg">
+            <img src="images/amazon pic.jpg" alt="Amazon books data analysis project with java">
             <div class="layer">
             <h3>Amazon Data Analysis</h3>
             <p>Used java to compute the average for each rating using standard deviation, regarless of genre </p>
@@ -143,12 +140,12 @@
             </div>
           </div>
         </div>
-        <a href="https://github.com/Mazin98/Projects" class="btn">See More</a>
+        <a href="https://github.com/Mazin98?tab=repositories" class="btn">See More</a>
       </div>
      </div>
 
 
-     <!-- -------------------contact-------------------- -->
+     <!-- -------------------message along with contact links -------------------- -->
      <div id="contact">
       <div class="container">
         <div class="row">
@@ -165,9 +162,10 @@
             <a href="images/Mazin_Tagelsir_Resume.pdf" class="btn btn2">Resume</a>
           </div>
             <div class="contact-right">
+              <form name="submit-to-google-sheet"></form>
               <form>
                 <input type="text" name = "Name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
                 <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                 <button type="submit" class="btn btn2">Submit</button>
 
@@ -204,6 +202,19 @@
 
 
      </script>
+
+<!-- script for the google sheets message -->
+<script>
+  const scriptURL = '<https://script.google.com/macros/s/AKfycbxTq4B_Lminol2gc0AKvArw3JD_He7ETuW7HHY4DpntY89osjR8MMATWQxjRRCQrBIdAw/exec>'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 
 
 
