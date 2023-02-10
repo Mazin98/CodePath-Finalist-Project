@@ -87,6 +87,10 @@ body {
   color: aqua;
  }
 
+ .under{
+  margin-left: 900px;
+ }
+
  /* ----sentance with text */
  /* .wrapper{
   display: flex;
@@ -395,6 +399,7 @@ background: aqua;
   margin-top: -40px;
   display:block;
  }
+
 
 
  /* ------------css for small screen--------- */
