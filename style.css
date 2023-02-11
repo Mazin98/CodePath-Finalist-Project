@@ -150,8 +150,9 @@ body {
 
  /* -----------------------about------------------ */
  #about{
+  background: gray;
   padding: 80px;
-  color: #ababab;
+  color: black;
  }
  .row{
   display: flex;
@@ -210,7 +211,7 @@ body {
  }
 
  .tab-contents ul li span{
-  color: aqua;
+  color: black;
   font-size: 14px;
  }
 
@@ -232,10 +233,14 @@ body {
   margin-top: 50px;
   margin-left: 250px;
  }
+ .container{
+
+ }
 
 
  /* ----------projects---------- */
  #portfolio{
+  background: gray;
   padding: 50px 0;
   
  }
