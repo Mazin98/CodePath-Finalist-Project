@@ -77,9 +77,8 @@ body {
  .header-text p span{
   color: aqua;
  }
-
  .header-c{
-  margin-top: 55%;
+  margin-top: 50%;
   font-size: 25px;
   margin-left: px;
  }
@@ -311,6 +310,24 @@ body {
 
 
  /* ----------buttobelow---------- */
+
+ .btn-invert{
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid aqua;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: aqua;
+  transition: background 0.5s;
+ }
+
+ .btn-invert:hover{
+  background: aqua;
+  color: white;
+   }
+
  .btn{
   display: block;
   margin: 50px auto;
